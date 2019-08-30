@@ -1,7 +1,7 @@
 import express from "express";
 import cors from "cors";
 
-import { getUser } from "./services/auth0";
+import { checkAuth } from "./middleware/auth";
 import { queryUsers } from "./services/sanity";
 
 const port = process.env.PORT || 8080;
@@ -10,27 +10,10 @@ const app = express();
 app.use(cors());
 
 /**
- * Middleware
+ * Routes
  */
 
-async function checkAuth(req, res, next) {
-  const { user: userId } = req.headers;
-  const user = await getUser(userId);
-
-  if (!user || !user.sub) {
-    return res.sendStatus(403);
-  }
-
-  req.userId = user.sub;
-
-  return next();
-}
-
-/**
- * Controller
- */
-
-async function controller(req, res) {
+app.get("/", checkAuth, async function(req, res) {
   const data = await queryUsers();
 
   let currentUser = data.find(
@@ -38,13 +21,11 @@ async function controller(req, res) {
   );
 
   return res.json({ currentUser });
-}
+});
 
 /**
- * Route
+ * Attach to port and run
  */
-
-app.get("/", checkAuth, controller);
 
 app.listen(port);
 

@@ -4,6 +4,10 @@ export async function getUser(user) {
   const baseUrl = "https://fredjens.eu.auth0.com/userinfo";
   let userData = {};
 
+  if (!user) {
+    return;
+  }
+
   try {
     userData = await axios.get(baseUrl, {
       headers: {
