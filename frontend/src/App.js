@@ -8,7 +8,7 @@ import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import Home from "./views/Home";
 import Profile from "./views/Profile";
-import { useAuth0 } from "./react-auth0-spa";
+import { useAuth0 } from "./hooks/auth0";
 import history from "./utils/history";
 
 // styles

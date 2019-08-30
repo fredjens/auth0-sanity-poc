@@ -18,7 +18,7 @@ import {
   DropdownItem
 } from "reactstrap";
 
-import { useAuth0 } from "../react-auth0-spa";
+import { useAuth0 } from "../hooks/auth0";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);

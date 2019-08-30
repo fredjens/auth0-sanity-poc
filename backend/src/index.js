@@ -24,7 +24,7 @@ app.get("/", async function(req, res) {
     console.log("user", user);
   } catch (err) {
     //console.log("err", err);
-    res.send(400);
+    res.send(405);
   }
   console.log("user", user.data);
 
