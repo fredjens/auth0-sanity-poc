@@ -1,0 +1,23 @@
+{
+  "root": true,
+  "project": {
+    "name": "auth0-poc"
+  },
+  "api": {
+    "projectId": "a6i9w6ly",
+    "dataset": "dev"
+  },
+  "plugins": [
+    "@sanity/base",
+    "@sanity/components",
+    "@sanity/default-layout",
+    "@sanity/default-login",
+    "@sanity/desk-tool"
+  ],
+  "parts": [
+    {
+      "name": "part:@sanity/base/schema",
+      "path": "./schemas/schema.js"
+    }
+  ]
+}

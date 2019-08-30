@@ -1,0 +1,20 @@
+{
+  "name": "auth0-sanity",
+  "version": "1.0.0",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "scripts": {
+    "backend": "cd backend && yarn dev",
+    "frontend": "cd frontend && yarn dev",
+    "sanity": "cd sanity && yarn dev",
+    "dev": "concurrently \"yarn backend\" \"yarn frontend\" \"yarn sanity\""
+  },
+  "dependencies": {
+    "concurrently": "^4.1.2",
+    "prettier": "^1.18.2"
+  }
+}
