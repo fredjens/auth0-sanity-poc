@@ -14,7 +14,13 @@ const Home = props => {
   return (
     <Fragment>
       <Hero />
-      {data && <Highlight>{JSON.stringify(data, null, 2)}</Highlight>}
+      {data && (
+        <Highlight>
+          Sanity
+          <br />
+          {JSON.stringify(data, null, 2)}
+        </Highlight>
+      )}
       <hr />
       <Content />
     </Fragment>
