@@ -1158,6 +1158,20 @@
     es6-error "^4.0.2"
     type-of-is "^3.5.1"
 
+"@sanity/vision@^0.142.2":
+  version "0.142.2"
+  resolved "https://registry.npmjs.org/@sanity/vision/-/vision-0.142.2.tgz#e4d5305102e59c03a2e774c14104dcdf8f98494e"
+  dependencies:
+    classnames "^2.2.5"
+    codemirror "^5.47.0"
+    moment "^2.19.1"
+    query-string "^4.3.2"
+    react-codemirror2 "^6.0.0"
+    react-icon-base "^2.1.2"
+    react-json-view "^1.19.1"
+    react-spinner "^0.2.6"
+    react-split-pane "^0.1.84"
+
 "@sanity/webpack-integration@0.142.0":
   version "0.142.0"
   resolved "https://registry.npmjs.org/@sanity/webpack-integration/-/webpack-integration-0.142.0.tgz#2484c6123f1675c551ac8a5ce377f7713c7b41b6"
@@ -1541,6 +1555,10 @@ balanced-match@^0.4.2:
 balanced-match@^1.0.0:
   version "1.0.0"
   resolved "https://registry.npmjs.org/balanced-match/-/balanced-match-1.0.0.tgz#89b4d199ab2bee49de164ea02b89ce462d71b767"
+
+base16@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.npmjs.org/base16/-/base16-1.0.0.tgz#e297f60d7ec1014a7a971a39ebc8a98c0b681e70"
 
 base64-js@^1.0.2:
   version "1.3.1"
@@ -2002,6 +2020,10 @@ coa@^2.0.2:
 code-point-at@^1.0.0:
   version "1.1.0"
   resolved "https://registry.npmjs.org/code-point-at/-/code-point-at-1.1.0.tgz#0d070b4d043a5bea33a2f1a40e2edb3d9a4ccf77"
+
+codemirror@^5.47.0:
+  version "5.48.4"
+  resolved "https://registry.npmjs.org/codemirror/-/codemirror-5.48.4.tgz#4210fbe92be79a88f0eea348fab3ae78da85ce47"
 
 collection-visit@^1.0.0:
   version "1.0.0"
@@ -3112,7 +3134,13 @@ fastparse@^1.1.1:
   version "1.1.2"
   resolved "https://registry.npmjs.org/fastparse/-/fastparse-1.1.2.tgz#91728c5a5942eced8531283c79441ee4122c35a9"
 
-fbjs@^0.8.1, fbjs@^0.8.9:
+fbemitter@^2.0.0:
+  version "2.1.1"
+  resolved "https://registry.npmjs.org/fbemitter/-/fbemitter-2.1.1.tgz#523e14fdaf5248805bb02f62efc33be703f51865"
+  dependencies:
+    fbjs "^0.8.4"
+
+fbjs@^0.8.0, fbjs@^0.8.1, fbjs@^0.8.4, fbjs@^0.8.9:
   version "0.8.17"
   resolved "https://registry.npmjs.org/fbjs/-/fbjs-0.8.17.tgz#c4d598ead6949112653d6588b01a5cdcd9f90fdd"
   dependencies:
@@ -3194,6 +3222,13 @@ flush-write-stream@^1.0.0:
   dependencies:
     inherits "^2.0.3"
     readable-stream "^2.3.6"
+
+flux@^3.1.3:
+  version "3.1.3"
+  resolved "https://registry.npmjs.org/flux/-/flux-3.1.3.tgz#d23bed515a79a22d933ab53ab4ada19d05b2f08a"
+  dependencies:
+    fbemitter "^2.0.0"
+    fbjs "^0.8.0"
 
 follow-redirects@^1.2.4:
   version "1.8.1"
@@ -4336,6 +4371,14 @@ lodash._reinterpolate@^3.0.0:
 lodash.camelcase@^4.3.0:
   version "4.3.0"
   resolved "https://registry.npmjs.org/lodash.camelcase/-/lodash.camelcase-4.3.0.tgz#b28aa6288a2b9fc651035c7711f65ab6190331a6"
+
+lodash.curry@^4.0.1:
+  version "4.1.1"
+  resolved "https://registry.npmjs.org/lodash.curry/-/lodash.curry-4.1.1.tgz#248e36072ede906501d75966200a86dab8b23170"
+
+lodash.flow@^3.3.0:
+  version "3.5.0"
+  resolved "https://registry.npmjs.org/lodash.flow/-/lodash.flow-3.5.0.tgz#87bf40292b8cf83e4e8ce1a3ae4209e20071675a"
 
 lodash.foreach@^3.0.3:
   version "3.0.3"
@@ -5984,6 +6027,10 @@ punycode@^2.1.0, punycode@^2.1.1:
   version "2.1.1"
   resolved "https://registry.npmjs.org/punycode/-/punycode-2.1.1.tgz#b58b010ac40c22c5657616c8d2c2c02c7bf479ec"
 
+pure-color@^1.2.0:
+  version "1.3.0"
+  resolved "https://registry.npmjs.org/pure-color/-/pure-color-1.3.0.tgz#1fe064fb0ac851f0de61320a8bf796836422f33e"
+
 q@^1.1.2:
   version "1.5.1"
   resolved "https://registry.npmjs.org/q/-/q-1.5.1.tgz#7e32f75b41381291d04611f1bf14109ac00651d7"
@@ -5995,6 +6042,13 @@ qs@6.7.0:
 qs@~6.5.2:
   version "6.5.2"
   resolved "https://registry.npmjs.org/qs/-/qs-6.5.2.tgz#cb3ae806e8740444584ef154ce8ee98d403f3e36"
+
+query-string@^4.3.2:
+  version "4.3.4"
+  resolved "https://registry.npmjs.org/query-string/-/query-string-4.3.4.tgz#bbb693b9ca915c232515b228b1a02b609043dbeb"
+  dependencies:
+    object-assign "^4.1.0"
+    strict-uri-encode "^1.0.0"
 
 querystring-es3@^0.2.0:
   version "0.2.1"
@@ -6070,11 +6124,24 @@ react-animate-height@^2.0.6:
     classnames "^2.2.5"
     prop-types "^15.6.1"
 
+react-base16-styling@^0.6.0:
+  version "0.6.0"
+  resolved "https://registry.npmjs.org/react-base16-styling/-/react-base16-styling-0.6.0.tgz#ef2156d66cf4139695c8a167886cb69ea660792c"
+  dependencies:
+    base16 "^1.0.0"
+    lodash.curry "^4.0.1"
+    lodash.flow "^3.3.0"
+    pure-color "^1.2.0"
+
 react-click-outside@^3.0.0:
   version "3.0.1"
   resolved "https://registry.npmjs.org/react-click-outside/-/react-click-outside-3.0.1.tgz#6e77e84d2f17afaaac26dbad743cbbf909f5e24c"
   dependencies:
     hoist-non-react-statics "^2.1.1"
+
+react-codemirror2@^6.0.0:
+  version "6.0.0"
+  resolved "https://registry.npmjs.org/react-codemirror2/-/react-codemirror2-6.0.0.tgz#180065df57a64026026cde569a9708fdf7656525"
 
 react-container-query@^0.11.0:
   version "0.11.0"
@@ -6164,6 +6231,15 @@ react-json-inspector@^7.1.1:
     object-assign "2.0.0"
     prop-types "^15.5.10"
 
+react-json-view@^1.19.1:
+  version "1.19.1"
+  resolved "https://registry.npmjs.org/react-json-view/-/react-json-view-1.19.1.tgz#95d8e59e024f08a25e5dc8f076ae304eed97cf5c"
+  dependencies:
+    flux "^3.1.3"
+    react-base16-styling "^0.6.0"
+    react-lifecycles-compat "^3.0.4"
+    react-textarea-autosize "^6.1.0"
+
 react-lifecycles-compat@^3.0.2, react-lifecycles-compat@^3.0.4:
   version "3.0.4"
   resolved "https://registry.npmjs.org/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
@@ -6215,6 +6291,10 @@ react-sortable-hoc@^0.6.3:
     lodash "^4.12.0"
     prop-types "^15.5.7"
 
+react-spinner@^0.2.6:
+  version "0.2.7"
+  resolved "https://registry.npmjs.org/react-spinner/-/react-spinner-0.2.7.tgz#ea3ca3375dd7a54edbb5cc01d17496a2e2fc14db"
+
 react-split-pane@^0.1.84:
   version "0.1.87"
   resolved "https://registry.npmjs.org/react-split-pane/-/react-split-pane-0.1.87.tgz#a7027ae554abfacca35f5f780288b07fe4ec4cbd"
@@ -6228,6 +6308,12 @@ react-style-proptype@^3.0.0:
   resolved "https://registry.npmjs.org/react-style-proptype/-/react-style-proptype-3.2.2.tgz#d8e998e62ce79ec35b087252b90f19f1c33968a0"
   dependencies:
     prop-types "^15.5.4"
+
+react-textarea-autosize@^6.1.0:
+  version "6.1.0"
+  resolved "https://registry.npmjs.org/react-textarea-autosize/-/react-textarea-autosize-6.1.0.tgz#df91387f8a8f22020b77e3833c09829d706a09a5"
+  dependencies:
+    prop-types "^15.6.0"
 
 react-tiny-virtual-list@^2.0.5:
   version "2.2.0"
@@ -7002,6 +7088,10 @@ stream-http@^2.7.2:
 stream-shift@^1.0.0:
   version "1.0.0"
   resolved "https://registry.npmjs.org/stream-shift/-/stream-shift-1.0.0.tgz#d5c752825e5367e786f78e18e445ea223a155952"
+
+strict-uri-encode@^1.0.0:
+  version "1.1.0"
+  resolved "https://registry.npmjs.org/strict-uri-encode/-/strict-uri-encode-1.1.0.tgz#279b225df1d582b1f54e65addd4352e18faa0713"
 
 string-hash@^1.1.3:
   version "1.1.3"

@@ -7,7 +7,6 @@ import { useAuth0 } from "../hooks/auth0";
 
 const Profile = () => {
   const { loading, user } = useAuth0();
-  console.log("user", user);
 
   if (loading || !user) {
     return <Loading />;
