@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export async function getUser(user) {
-  const baseUrl = "https://fredjens.eu.auth0.com/userinfo";
+  const baseUrl = process.env.AUTH0_URL;
   let userData = {};
 
   if (!user) {

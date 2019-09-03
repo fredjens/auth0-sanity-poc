@@ -1,1 +1,1 @@
-# auth0-sanity-poc
+# Auth0 and Sanity

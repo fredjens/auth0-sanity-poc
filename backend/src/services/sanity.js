@@ -1,6 +1,7 @@
 import axios from "axios";
 
-const baseUrl = "https://a6i9w6ly.api.sanity.io/v1";
+const baseUrl = process.env.SANITY_URL;
+const sanityToken = process.env.SANITY_TOKEN;
 
 /**
  * Sanity query wrapper
@@ -13,8 +14,7 @@ export async function sanityQuery(query) {
   try {
     res = await axios.get(`${url}?query=${query}`, {
       headers: {
-        Authorization:
-          "Bearer skrEIOnqfVJS17kPA3lCi0JshD2kQfSNnr5m7Ey2mpw6UJnfLkLDOFenSgCAN1qnlV6gB9JjSI5rkALZeTY94FtthiafMWYi9CUfRBbXdDgzJ6OWus2BigSMUWkWF11JAFXfbXRnBxh18wE7ZuOJsWeW0tYzpcWK8cLClk4uxAID4l8nOtuV"
+        Authorization: `Bearer ${sanityToken}`
       }
     });
   } catch (err) {
