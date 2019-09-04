@@ -4,8 +4,8 @@
     "name": "auth0-poc"
   },
   "api": {
-    "projectId": "a6i9w6ly",
-    "dataset": "dev"
+    "projectId": "<YourProjectId>",
+    "dataset": "<YouDataSet>"
   },
   "plugins": [
     "@sanity/base",
